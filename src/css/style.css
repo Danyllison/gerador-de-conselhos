@@ -1,0 +1,94 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.bloco{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-bloco);
+    width: 500px;
+    height: 300px;
+    border-radius: 5%;
+}
+.caixa-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.titulo-conselho{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    color: var(--titulo-conselho);
+    font-size: 13px; 
+    letter-spacing: 4px; /*(ESPAÇO ENTRE AS LETRAS)*/
+    text-transform: uppercase;  /*(DEIXA TODAS AS LETRAS MAIUSCULAS) */
+}
+
+.conselho{
+    color: var(--cor-texto);
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 17px;
+}
+
+.linha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.botao{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.borda-botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--titulo-conselho);
+    border-radius: 100%;
+    cursor: pointer;
+    transform: translateY(50%);
+    
+}
+
+.borda-botao:hover{
+    color: #53FFAB;
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--titulo-conselho);
+}
+
+@media(max-width: 520px){
+    .bloco{
+        width: 390px;
+    }
+    .conselho{
+        font-size: 15px;
+    }
+    .linha{
+        margin-top: 30px;
+    } 
+    .titulo-conselho{
+        font-size: 10px;
+    }
+   
+}
+
+
